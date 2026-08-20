@@ -1,0 +1,181 @@
+/*-- scss:defaults --*/
+
+// Paleta extraída da arte final do simpósio (arte_final/)
+$navy:        #101B33;
+$navy-deep:   #0A1226;
+$blue:        #3D7EB5;
+$blue-light:  #6FA8D6;
+$amber:       #F2A93B;
+$cream:       #F6EFE3;
+$ink:         #1C2331;
+$muted:       #5B6779;
+
+$body-bg:     #FFFFFF;
+$body-color:  $ink;
+$link-color:  #1F5C93;
+$primary:     $blue;
+
+$font-family-sans-serif: "Segoe UI", "Candara", -apple-system, "Helvetica Neue", Arial, sans-serif;
+$headings-font-weight: 700;
+$toc-color: $muted;
+
+/*-- scss:rules --*/
+
+h1, h2, h3 { color: $navy; letter-spacing: -0.01em; }
+h2 { margin-top: 2.2rem; }
+
+/* ---------- Hero ---------- */
+.hero {
+  background: $navy-deep;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(16, 27, 51, 0.18);
+}
+.hero img { width: 100%; display: block; }
+
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  background: $navy;
+}
+.hero-cta .meta {
+  color: #C9D6E8;
+  font-size: 0.95rem;
+  margin-right: auto;
+}
+.hero-cta .meta strong { color: #FFFFFF; }
+
+/* ---------- Botões ---------- */
+.btn-simposio, .btn-simposio-ghost {
+  display: inline-block;
+  padding: 0.6rem 1.15rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.btn-simposio { background: $amber; color: $navy-deep !important; }
+.btn-simposio:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(242,169,59,.35); }
+.btn-simposio-ghost { border: 1px solid $blue-light; color: #DCE8F5 !important; }
+.btn-simposio-ghost:hover { background: rgba(111,168,214,.15); }
+
+/* ---------- Cartões ---------- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.card-s {
+  border: 1px solid #E3E8EF;
+  border-left: 4px solid $blue;
+  border-radius: 10px;
+  padding: 1rem 1.15rem;
+  background: #FCFDFE;
+}
+.card-s h4 { margin: 0 0 .35rem 0; font-size: 1.02rem; color: $navy; }
+.card-s p  { margin: 0; color: $muted; font-size: .93rem; line-height: 1.45; }
+.card-s.destaque { border-left-color: $amber; background: #FFFBF2; }
+
+/* ---------- Grade da programação ---------- */
+.grade { overflow-x: auto; margin: 1.5rem 0; }
+.grade table {
+  border-collapse: separate;
+  border-spacing: 6px;
+  width: 100%;
+  min-width: 860px;
+  font-size: .9rem;
+}
+.grade th {
+  background: $blue;
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: .55rem .8rem;
+  border-radius: 8px;
+  text-align: left;
+  white-space: nowrap;
+}
+.grade th.hora { background: transparent; color: $muted; }
+.grade td {
+  background: #F4F6FA;
+  border-radius: 10px;
+  padding: .7rem .85rem;
+  vertical-align: top;
+  line-height: 1.35;
+}
+.grade td.hora {
+  background: transparent;
+  color: $navy;
+  font-weight: 700;
+  white-space: nowrap;
+  width: 92px;
+}
+.grade td.vazio { background: transparent; border: 1px dashed #D7DEE8; }
+.grade td .quem { display: block; color: $muted; font-size: .84rem; margin-top: .25rem; }
+.grade td.destaque { background: $navy; color: #FFFFFF; }
+.grade td.destaque .quem { color: #C9D6E8; }
+.grade td.interno { background: #EAF3EC; }
+.grade tr.intervalo td {
+  background: transparent;
+  color: $muted;
+  font-size: .78rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  padding: .15rem .3rem;
+  border-bottom: 1px solid #E7EBF1;
+  border-radius: 0;
+}
+
+/* ---------- Palestrantes ---------- */
+.pessoa {
+  border-top: 1px solid #E7EBF1;
+  padding: 1.1rem 0;
+}
+.pessoa h3 { margin: 0 0 .15rem 0; font-size: 1.08rem; }
+.pessoa .inst {
+  display: inline-block;
+  background: #EDF3F9;
+  color: #1F5C93;
+  border-radius: 999px;
+  padding: .1rem .6rem;
+  font-size: .8rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+.pessoa p { margin: .2rem 0; }
+.pessoa .tema { color: $ink; }
+.pessoa .quando { color: $muted; font-size: .88rem; }
+
+/* ---------- Lista de materiais ---------- */
+.materiais ul { list-style: none; padding-left: 0; margin: 0; }
+.materiais li {
+  border: 1px solid #E3E8EF;
+  border-radius: 10px;
+  padding: .8rem 1rem;
+  margin-bottom: .6rem;
+  display: flex;
+  gap: .8rem;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.materiais .tipo {
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  background: $navy;
+  color: #FFF;
+  border-radius: 4px;
+  padding: .15rem .45rem;
+}
+.materiais .breve { background: #E3E8EF; color: $muted; }
+.materiais .desc { color: $muted; font-size: .9rem; width: 100%; margin: .15rem 0 0 0; }
+.materiais li > a { font-weight: 600; text-decoration: none; }
+.materiais li > a:hover { text-decoration: underline; }
+
+/* ---------- Rodapé ---------- */
+.footer, .nav-footer { font-size: .85rem; }
+.nav-footer a { color: #9FC0E0; }

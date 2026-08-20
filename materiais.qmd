@@ -1,0 +1,59 @@
+---
+title: "Materiais"
+subtitle: "Inscrição, programação e material das sessões"
+---
+
+## Inscrição
+
+A participação é gratuita. O curso do dia 9 de setembro tem **vagas limitadas** e a seleção segue a ordem de inscrição.
+
+[Formulário de inscrição](https://forms.gle/HFRWbrasoC7TqyaT8){.btn-simposio target="_blank"}
+
+## Programação
+
+::: {.materiais}
+- [<span class="tipo">PDF</span> Programação completa](materiais/programacao-simposio-mobilidade.pdf)
+  <p class="desc">Grade horária em texto, para impressão e anexo em pedidos de afastamento.</p>
+- [<span class="tipo">PDF</span> Programação diagramada](materiais/programacao-arte.pdf)
+  <p class="desc">Versão em arte, para divulgação.</p>
+- [<span class="tipo">PNG</span> Grade em imagem](images/programacao.png)
+  <p class="desc">Para compartilhar em mensagens e redes sociais.</p>
+:::
+
+## Divulgação
+
+::: {.materiais}
+- [<span class="tipo">PNG</span> Banner do simpósio](materiais/banner-divulgacao.png)
+  <p class="desc">Peça horizontal com QR Code das inscrições — para e-mail, apresentações e murais.</p>
+:::
+
+## Material das sessões
+
+Slides, códigos e dados são publicados aqui **após cada sessão**. Os módulos do curso em R vêm com os scripts e as bases usadas em aula.
+
+::: {.materiais}
+- <span class="tipo breve">Em breve</span> **Curso: Dados censitários e acessibilidade urbana em R** — scripts, dados e slides dos quatro módulos (9/set).
+  <p class="desc">Jorge Ubirajara (UFBA), Thiago Louro e Lucas Brandão (EESC-USP)</p>
+- <span class="tipo breve">Em breve</span> **Tutorial de replicações e validade estatística** (8/set).
+  <p class="desc">Rodrigo Castelan (UFSC)</p>
+- <span class="tipo breve">Em breve</span> **Emissões de GEE: laboratório, mundo real e simulação** (10/set).
+  <p class="desc">Flávio Vaz (EESC-USP)</p>
+- <span class="tipo breve">Em breve</span> **Microssimulação de tráfego e realidade virtual** (10/set).
+  <p class="desc">Felipe Caleffi (UFSM)</p>
+- <span class="tipo breve">Em breve</span> **Veículos autônomos no meio urbano** (10/set).
+  <p class="desc">José Elievam (UFMG)</p>
+- <span class="tipo breve">Em breve</span> **Resultados EESC-USP e fechamento do projeto** (10/set).
+  <p class="desc">André Luiz Cunha (EESC-USP)</p>
+:::
+
+::: {.callout-note appearance="simple"}
+Para publicar um material, coloque o arquivo em `site/materiais/` e troque a linha correspondente por um link — ou aponte para o repositório/DOI onde o material já esteja depositado.
+:::
+
+## Sobre o projeto
+
+**"Repensando a modelagem de tráfego em redes de transportes para a nova geração de cidades inteligentes e conectadas"**
+Processo CNPq nº 409087/2023-8 — Chamada CNPq/MCTI nº 10/2023, Faixa B (Grupos Consolidados).
+Coordenação: Prof. Dr. André Luiz Barbosa Nunes da Cunha — Departamento de Engenharia de Transportes, EESC-USP.
+
+Dúvidas: [alcunha@usp.br](mailto:alcunha@usp.br)

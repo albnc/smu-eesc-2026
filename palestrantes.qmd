@@ -1,0 +1,13 @@
+---
+title: "Palestrantes"
+subtitle: "Equipe do projeto e convidados"
+---
+
+O simpósio reúne pesquisadores de sete instituições — EESC-USP, EPUSP, UFMG, UFRJ, UFSC, UFSM e UFBA — que integraram a equipe do projeto entre 2023 e 2026.
+
+{{< include _includes/_palestrantes.md >}}
+
+---
+
+[Ver a grade completa](programacao.qmd){.btn-simposio-ghost style="color:#1F5C93 !important;border-color:#3D7EB5;"}
+[Inscreva-se](https://forms.gle/HFRWbrasoC7TqyaT8){.btn-simposio target="_blank"}

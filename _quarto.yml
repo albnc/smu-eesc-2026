@@ -1,0 +1,56 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+
+website:
+  title: "Simpósio de Mobilidade Urbana"
+  description: "Modelagem de Tráfego para Cidades Inteligentes e Conectadas — 8 a 11 de setembro de 2026, EESC-USP, São Carlos-SP."
+  site-url: "https://albnc.github.io/claudeverse/"
+  favicon: images/logo-eesc-usp.png
+  open-graph: true
+  twitter-card:
+    card-style: summary_large_image
+    image: images/banner.png
+  navbar:
+    background: "#101B33"
+    foreground: "#FFFFFF"
+    logo: images/logo-eesc-usp.png
+    logo-alt: "EESC-USP"
+    title: false
+    left:
+      - href: index.qmd
+        text: Início
+      - href: programacao.qmd
+        text: Programação
+      - href: palestrantes.qmd
+        text: Palestrantes
+      - href: materiais.qmd
+        text: Materiais
+    right:
+      - text: "Inscreva-se"
+        href: "https://forms.gle/HFRWbrasoC7TqyaT8"
+        target: _blank
+  page-footer:
+    background: "#101B33"
+    foreground: "#C9D6E8"
+    left: |
+      **Realização:** Departamento de Engenharia de Transportes — EESC-USP<br>
+      **Apoio:** CNPq — Chamada CNPq/MCTI nº 10/2023 · Processo 409087/2023-8
+    center: |
+      Contato: [alcunha@usp.br](mailto:alcunha@usp.br)
+    right: |
+      8 a 11 de setembro de 2026<br>São Carlos-SP
+
+format:
+  html:
+    theme: [cosmo, custom.scss]
+    toc: true
+    toc-title: "Nesta página"
+    lang: pt-BR
+    anchor-sections: true
+    smooth-scroll: true
+    link-external-newwindow: true
+    grid:
+      body-width: 1000px

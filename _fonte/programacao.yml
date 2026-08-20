@@ -1,0 +1,66 @@
+# Fonte única da grade horária do simpósio.
+# Edite apenas este arquivo e rode:  python3 _fonte/gera_conteudo.py
+#
+# classe: "" (padrão) | destaque (bloco escuro) | interno (atividade do grupo) | vazio
+
+dias:
+  - id: "8/set"
+    semana: "terça"
+  - id: "9/set"
+    semana: "quarta"
+  - id: "10/set"
+    semana: "quinta"
+  - id: "11/set"
+    semana: "sexta"
+
+faixas:
+  - hora: "8h00<br>9h30"
+    blocos:
+      - {classe: vazio}
+      - titulo: "Dados censitários · teoria"
+        quem: "Jorge Ubirajara (UFBA), Thiago Louro e Lucas Brandão (EESC)"
+      - titulo: "Emissões de GEE em simulação"
+        quem: "Flávio Vaz (EESC-USP)"
+      - titulo: "Reunião de fechamento"
+        quem: "Grupo de pesquisa"
+        classe: interno
+
+  - intervalo: "Coffee break"
+
+  - hora: "10h00<br>12h00"
+    blocos:
+      - titulo: "Chegada dos convidados"
+        quem: "Recepção no aeroporto"
+        classe: vazio
+      - titulo: "Dados censitários · prática em R"
+        quem: "Jorge Ubirajara (UFBA), Thiago Louro e Lucas Brandão (EESC)"
+      - titulo: "Microssimulação e realidade virtual"
+        quem: "Felipe Caleffi (UFSM)"
+      - titulo: "Perspectivas futuras"
+        quem: "Planejamento de artigos"
+        classe: interno
+
+  - intervalo: "Almoço"
+
+  - hora: "14h00<br>15h30"
+    blocos:
+      - titulo: "Abertura do evento"
+        quem: "Recepção dos convidados"
+        classe: destaque
+      - titulo: "Acessibilidade urbana · teoria"
+        quem: "Jorge Ubirajara (UFBA), Thiago Louro e Lucas Brandão (EESC)"
+      - titulo: "Veículos autônomos no meio urbano"
+        quem: "José Elievam (UFMG)"
+      - {classe: vazio}
+
+  - intervalo: "Coffee break"
+
+  - hora: "16h00<br>18h00"
+    blocos:
+      - titulo: "Tutorial de replicações e validade estatística"
+        quem: "Rodrigo Castelan (UFSC)"
+      - titulo: "Acessibilidade urbana · prática em R"
+        quem: "Jorge Ubirajara (UFBA), Thiago Louro e Lucas Brandão (EESC)"
+      - titulo: "Resultados e fechamento do projeto"
+        quem: "André Luiz Cunha (EESC-USP)"
+      - {classe: vazio}
