@@ -6,8 +6,7 @@
 
 ### Modelagem de Tráfego para Cidades Inteligentes e Conectadas
 
-**8 a 11 de setembro de 2026** · EESC-USP · São Carlos-SP
-Participação gratuita 
+**8 a 11 de setembro de 2026** · EESC-USP · São Carlos-SP · Participação gratuita 
 
 ### ➜ **[Faça sua inscrição](https://forms.gle/tNbCwFhj6etKFCQH7)**
 
@@ -83,13 +82,13 @@ Coordenador do projeto. Consolida os resultados obtidos entre 2023 e 2026 pelo D
 
 Curso de dia inteiro (9/set), em quatro módulos alternando teoria e prática em R. Vagas limitadas.
 
-**Prof. Dr. Jorge Ubirajara Pedreira Junior** — *UFBA*
+**Prof. Dr. Jorge Ubirajara Pedreira Junior** — *UFBA*    
 Conduz os módulos que ligam a base censitária brasileira às medidas de acessibilidade urbana, do tratamento dos setores censitários ao cálculo de indicadores em R.
 
-**Dr. Thiago Vinicius Louro** — *egresso EESC-USP*
+**Dr. Thiago Vinicius Louro** — *egresso EESC-USP*    
 Responsável, junto com a equipe, pela parte prática do curso: manipulação de dados, cálculo de indicadores e visualização dos resultados em R.
 
-**Dr. Lucas Brandão Monteiro de Assis** — *egresso EESC-USP*
+**Dr. Lucas Brandão Monteiro de Assis** — *egresso EESC-USP*    
 Atua nos módulos práticos, com foco na reprodutibilidade das rotinas e na aplicação dos indicadores a estudos de caso.
 
 
