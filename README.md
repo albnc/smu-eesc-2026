@@ -107,7 +107,4 @@ A participação é **gratuita**. O curso em R tem **vagas limitadas** e a sele�
 
 <img src="images/logo-eesc-usp.png" alt="EESC-USP" height="60">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/logo-cnpq.png" alt="CNPq" height="60">
 
-**Realização:** Departamento de Engenharia de Transportes — EESC-USP
-**Apoio:** CNPq — Chamada CNPq/MCTI nº 10/2023 · Processo 409087/2023-8
-
 </div>
