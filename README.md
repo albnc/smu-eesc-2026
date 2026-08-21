@@ -7,7 +7,7 @@
 ### Modelagem de Tráfego para Cidades Inteligentes e Conectadas
 
 **8 a 11 de setembro de 2026** · EESC-USP · São Carlos-SP
-Participação gratuita · vagas limitadas para o curso de 9/set
+Participação gratuita 
 
 ### ➜ **[Faça sua inscrição](https://forms.gle/tNbCwFhj6etKFCQH7)**
 
