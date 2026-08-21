@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simpósio de Mobilidade Urbana · EESC-USP · 8 a 11 de setembro de 2026</title>
+<meta name="description" content="Modelagem de Tráfego para Cidades Inteligentes e Conectadas. 8 a 11 de setembro de 2026, EESC-USP, São Carlos-SP. Participação gratuita.">
+<meta property="og:title" content="Simpósio de Mobilidade Urbana — EESC-USP">
+<meta property="og:description" content="Modelagem de Tráfego para Cidades Inteligentes e Conectadas · 8 a 11 de setembro de 2026 · São Carlos-SP · Inscrição gratuita">
+<meta property="og:image" content="images/banner.png">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0c1a3a;
+    --navy-2:#122346;
+    --navy-3:#1b3161;
+    --blue:#4a86c4;
+    --blue-soft:#8fb8dd;
+    --gold:#e0a63c;
+    --cream:#f6efe3;
+    --cream-2:#eee2cf;
+    --terra:#b5623a;
+    --terra-dark:#8a4526;
+    --ink:#1d2430;
+    --ink-soft:#5a6472;
+    --line:rgba(12,26,58,.12);
+    --sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+    --disp:'Barlow Condensed','Inter',system-ui,sans-serif;
+    --wrap:1080px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:#fff;color:var(--ink);
+    font-family:var(--sans);font-size:17px;line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block}
+  a{color:var(--terra-dark);text-decoration:none;border-bottom:1px solid rgba(138,69,38,.3)}
+  a:hover{border-bottom-color:var(--terra)}
+  .wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 28px}
+
+  /* ---------- progresso ---------- */
+  #progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--gold);z-index:60;transition:width .1s linear}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:center;
+        background:radial-gradient(120% 90% at 78% 30%, #17305e 0%, var(--navy) 55%, #08122a 100%);
+        color:#fff;overflow:hidden;padding:96px 0 116px}
+  #net{position:absolute;inset:0;width:100%;height:100%;opacity:.85}
+  .hero .wrap{position:relative;z-index:2}
+  .eyebrow{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+           color:var(--blue-soft);margin:0 0 22px}
+  h1{font-family:var(--disp);font-weight:700;text-transform:uppercase;letter-spacing:.005em;
+     font-size:clamp(2.9rem,8.2vw,6rem);line-height:.92;margin:0 0 18px;max-width:14ch}
+  .sub{font-family:var(--disp);font-weight:500;font-size:clamp(1.3rem,3.2vw,2rem);line-height:1.2;
+       color:#cddcec;margin:0 0 40px;max-width:22ch}
+  .when{display:flex;align-items:flex-start;gap:16px;margin:0 0 36px}
+  .when .bar{width:4px;align-self:stretch;background:var(--gold);border-radius:2px;flex:none}
+  .when b{display:block;color:#fff;font-family:var(--disp);font-weight:700;text-transform:uppercase;
+          font-size:clamp(1.5rem,4vw,2.3rem);line-height:1.05;letter-spacing:.01em}
+  .when span{color:#a9bed6;font-size:15px}
+  .cta{display:inline-flex;align-items:center;gap:12px;background:var(--gold);color:#231603;
+       font-weight:700;font-size:16px;letter-spacing:.01em;padding:16px 30px;border-radius:999px;border:0;
+       transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+       box-shadow:0 10px 30px rgba(224,166,60,.28)}
+  .cta:hover{transform:translateY(-2px);background:#efb654;box-shadow:0 14px 36px rgba(224,166,60,.4)}
+  .cta .arrow{transition:transform .18s ease}
+  .cta:hover .arrow{transform:translateX(4px)}
+  .free{margin-left:16px;font-size:14px;color:#a9bed6}
+
+  /* countdown */
+  .count{display:flex;gap:10px;margin:44px 0 0;flex-wrap:wrap}
+  .count .u{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.12);border-radius:10px;
+            padding:10px 0;min-width:76px;text-align:center;backdrop-filter:blur(4px)}
+  .count .n{font-family:var(--disp);font-weight:700;font-size:2rem;line-height:1;display:block;
+            font-variant-numeric:tabular-nums}
+  .count .l{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#9db3cc}
+  .count.done{font-size:14px;color:var(--gold);letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+
+  .scrollcue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:2;
+             font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#7f95b1;
+             display:flex;flex-direction:column;align-items:center;gap:8px;border:0}
+  .scrollcue i{display:block;width:1px;height:34px;background:linear-gradient(#7f95b1,transparent);animation:cue 2.2s infinite}
+  @keyframes cue{0%{opacity:.2;transform:scaleY(.4);transform-origin:top}50%{opacity:1;transform:scaleY(1)}100%{opacity:.2;transform:scaleY(.4);transform-origin:bottom}}
+
+  /* ---------- seções ---------- */
+  section{padding:96px 0}
+  .cream{background:var(--cream)}
+  .navy{background:var(--navy);color:#fff}
+  h2{font-family:var(--disp);font-weight:700;text-transform:uppercase;letter-spacing:.04em;
+     font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.05;margin:0 0 8px}
+  .kicker{font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--terra);margin:0 0 14px}
+  .lead{font-size:clamp(1.05rem,2.2vw,1.22rem);line-height:1.6;max-width:62ch;color:#333c4a}
+  .lead b{color:var(--ink)}
+  .rule{height:1px;background:var(--line);border:0;margin:0}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:44px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px;
+        display:flex;flex-direction:column;
+        transition:transform .25s ease, box-shadow .25s ease}
+  .card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(12,26,58,.09)}
+  .card h3{font-family:var(--disp);text-transform:uppercase;letter-spacing:.06em;font-size:1.15rem;
+           margin:0 0 10px;color:var(--terra-dark)}
+  .card p{margin:0;font-size:15.5px;color:#454f5e}
+  .card p{flex:1 1 auto}
+  .card .tag{align-self:flex-start;margin-top:20px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+             color:var(--terra);border:1px solid rgba(181,98,58,.35);border-radius:999px;padding:4px 12px}
+
+  /* dados */
+  .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;margin-top:40px;
+         border-top:1px solid var(--line)}
+  .fact{padding:22px 24px 22px 0;border-bottom:1px solid var(--line)}
+  .fact dt{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:6px}
+  .fact dd{margin:0;font-size:16px;font-weight:500}
+
+  /* programação */
+  figure{margin:40px 0 0}
+  .shot{border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#fff;
+        box-shadow:0 20px 60px rgba(12,26,58,.10);cursor:zoom-in;transition:transform .3s ease}
+  .shot:hover{transform:scale(1.006)}
+  figcaption{margin-top:14px;font-size:13px;color:var(--ink-soft)}
+
+  /* palestrantes */
+  .people{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px;margin-top:40px}
+  .p{border-left:2px solid var(--gold);padding-left:18px}
+  .p b{display:block;font-size:16px}
+  .p span{font-size:13.5px;color:var(--ink-soft)}
+  .insts{margin-top:40px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+
+  /* cta final */
+  .navy h2{color:#fff}
+  .navy .lead{color:#c4d3e5}
+  .final{text-align:center}
+  .final .cta{margin-top:30px}
+
+  /* footer */
+  footer{background:#fff;padding:56px 0 64px;text-align:center}
+  .logos{display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap;margin-bottom:28px}
+  .logos img{height:56px;width:auto;opacity:.88;transition:opacity .3s ease,transform .3s ease}
+  .logos img:hover{opacity:1;transform:translateY(-2px)}
+  footer p{font-size:13px;color:var(--ink-soft);margin:6px 0;line-height:1.6}
+
+  /* lightbox */
+  #lb{position:fixed;inset:0;background:rgba(8,18,42,.94);display:none;align-items:center;justify-content:center;
+      z-index:80;padding:24px;cursor:zoom-out;opacity:0;transition:opacity .25s ease}
+  #lb.on{display:flex;opacity:1}
+  #lb img{max-width:100%;max-height:92vh;border-radius:10px;object-fit:contain}
+  #lb .close{position:absolute;top:18px;right:24px;color:#fff;font-size:30px;line-height:1;opacity:.7;border:0}
+
+  /* reveal */
+  .rv{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.16,.8,.3,1),transform .7s cubic-bezier(.16,.8,.3,1)}
+  .rv.in{opacity:1;transform:none}
+
+  @media (max-width:760px){
+    section{padding:68px 0}
+    .hero{padding:80px 0 64px}
+    .wrap{padding:0 22px}
+    .scrollcue{display:none}
+    .free{display:block;margin:16px 0 0}
+    .count{margin-top:34px;gap:8px}
+    .count .u{min-width:0;flex:1 1 0}
+    .count .n{font-size:1.7rem}
+    .fact{padding-right:0}
+    .logos{gap:28px}
+    .logos img{height:44px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+    .rv{opacity:1;transform:none}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<div id="progress"></div>
+
+<!-- ══════════ HERO ══════════ -->
+<header class="hero">
+  <canvas id="net" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <p class="eyebrow rv">Encerramento do projeto · Redes de transportes e cidades conectadas</p>
+    <h1 class="rv">Simpósio de Mobilidade Urbana</h1>
+    <p class="sub rv">Modelagem de Tráfego para Cidades Inteligentes e Conectadas</p>
+
+    <div class="when rv">
+      <span class="bar"></span>
+      <span>
+        <b>8 a 11 de setembro de 2026</b>
+        <span>EESC-USP · São Carlos-SP · Participação gratuita</span>
+      </span>
+    </div>
+
+    <p class="rv" style="margin:0">
+      <a class="cta" href="https://forms.gle/tNbCwFhj6etKFCQH7" target="_blank" rel="noopener" style="border:0">
+        Faça sua inscrição <span class="arrow">→</span>
+      </a>
+      <span class="free">Vagas limitadas no curso em R</span>
+    </p>
+
+    <div class="count rv" id="count" aria-label="Contagem regressiva para o evento"></div>
+  </div>
+  <a class="scrollcue" href="#evento" aria-label="Rolar para o conteúdo"><span>Explore</span><i></i></a>
+</header>
+
+<!-- ══════════ O EVENTO ══════════ -->
+<section id="evento">
+  <div class="wrap">
+    <p class="kicker rv">O evento</p>
+    <h2 class="rv">Quatro dias de resultados</h2>
+    <p class="lead rv">
+      O simpósio encerra o projeto <b>“Repensando a modelagem de tráfego em redes de transportes para a
+      nova geração de cidades inteligentes e conectadas”</b> — Processo CNPq nº 409087/2023-8,
+      Chamada CNPq/MCTI nº 10/2023, Faixa B, Grupos Consolidados.
+    </p>
+    <p class="lead rv" style="margin-top:18px">
+      A equipe — pesquisadores de cinco instituições — apresenta os resultados obtidos entre 2023 e 2026
+      e discute a agenda que se abre a partir deles.
+    </p>
+
+    <div class="cards">
+      <div class="card rv">
+        <h3>Curso prático em R</h3>
+        <p><i>Dados censitários e acessibilidade urbana em R</i> — dia inteiro em 9/set, quatro módulos
+          alternando teoria e prática.</p>
+        <span class="tag">Vagas limitadas</span>
+      </div>
+      <div class="card rv">
+        <h3>Palestras</h3>
+        <p>Emissões de GEE, microssimulação com realidade virtual, veículos autônomos e validade
+          estatística de resultados de simulação.</p>
+        <span class="tag">Aberto a todos</span>
+      </div>
+      <div class="card rv">
+        <h3>Para quem é</h3>
+        <p>Estudantes, pesquisadores, docentes e profissionais de órgãos públicos, concessionárias e
+          empresas de engenharia de tráfego, planejamento de transportes e ITS.</p>
+        <span class="tag">Entrada gratuita</span>
+      </div>
+    </div>
+
+    <dl class="facts">
+      <div class="fact rv"><dt>Datas</dt><dd>8 a 11 de setembro de 2026 · terça a sexta</dd></div>
+      <div class="fact rv"><dt>Local</dt><dd>EESC-USP · São Carlos-SP</dd></div>
+      <div class="fact rv"><dt>Realização</dt><dd>Depto. de Engenharia de Transportes — EESC-USP</dd></div>
+      <div class="fact rv"><dt>Inscrição</dt><dd><a href="https://forms.gle/tNbCwFhj6etKFCQH7" target="_blank" rel="noopener">Formulário on-line</a> · gratuita</dd></div>
+      <div class="fact rv"><dt>Contato</dt><dd><a href="mailto:alcunha@usp.br">alcunha@usp.br</a></dd></div>
+      <div class="fact rv"><dt>Apoio</dt><dd>CNPq · Processo 409087/2023-8</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ══════════ PROGRAMAÇÃO ══════════ -->
+<section class="cream" id="programacao">
+  <div class="wrap">
+    <p class="kicker rv">Programação</p>
+    <h2 class="rv">Grade horária</h2>
+    <p class="lead rv">Curso em R na quarta (9/set), palestras na quinta (10/set), abertura na terça e
+      fechamento na sexta.</p>
+    <figure class="rv">
+      <img class="shot" id="grade" src="images/programacao.png"
+           alt="Grade horária do Simpósio de Mobilidade Urbana, de 8 a 11 de setembro de 2026."
+           loading="lazy">
+      <figcaption>Clique na imagem para ampliar.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ══════════ PALESTRANTES ══════════ -->
+<section id="palestrantes">
+  <div class="wrap">
+    <p class="kicker rv">Palestrantes</p>
+    <h2 class="rv">Cinco instituições, uma equipe</h2>
+    <p class="lead rv">
+      Pesquisadores da USP (EESC e EP), UFMG, UFRJ, UFSC e UFSM que integraram o projeto entre 2023 e 2026,
+      com a participação especial do <b>prof. Jorge Ubirajara</b> (UFBA) no curso em R — desenvolvedor do
+      pacote <a href="https://pedreirajr.github.io/cnefetools/" target="_blank" rel="noopener">cnefetools</a>
+      e autor do livro <a href="https://pedreirajr.github.io/rcensolivro/" target="_blank" rel="noopener">Censo Demográfico em R</a>.
+    </p>
+
+    <div class="people">
+      <div class="p rv"><b>Prof. Dr. Jorge Ubirajara Pedreira Junior</b><span>UFBA · curso em R</span></div>
+      <div class="p rv"><b>Dr. Thiago Vinicius Louro</b><span>Egresso EESC-USP · prática em R</span></div>
+      <div class="p rv"><b>Dr. Lucas Brandão M. de Assis</b><span>Egresso EESC-USP · prática em R</span></div>
+    </div>
+    <p class="insts rv">USP-EESC · EPUSP · UFMG · UFRJ · UFSC · UFSM · UFBA</p>
+  </div>
+</section>
+
+<!-- ══════════ INSCRIÇÃO ══════════ -->
+<section class="navy final" id="inscricao">
+  <div class="wrap">
+    <p class="kicker rv" style="color:var(--gold)">Inscrição</p>
+    <h2 class="rv">Últimas vagas</h2>
+    <p class="lead rv" style="margin:0 auto">
+      A participação é gratuita. O curso em R tem vagas limitadas e a seleção segue a ordem de inscrição.
+    </p>
+    <p class="rv" style="margin:0">
+      <a class="cta" href="https://forms.gle/tNbCwFhj6etKFCQH7" target="_blank" rel="noopener" style="border:0">
+        Garantir minha vaga <span class="arrow">→</span>
+      </a>
+    </p>
+  </div>
+</section>
+
+<!-- ══════════ RODAPÉ ══════════ -->
+<footer>
+  <div class="wrap">
+    <div class="logos rv">
+      <img src="images/logo-eesc-usp.png" alt="EESC-USP" loading="lazy">
+      <img src="images/logo-cnpq.png" alt="CNPq" loading="lazy">
+    </div>
+    <p>Realização: Departamento de Engenharia de Transportes — EESC-USP</p>
+    <p>Apoio: CNPq — Chamada CNPq/MCTI nº 10/2023 · Processo 409087/2023-8</p>
+    <p><a href="mailto:alcunha@usp.br">alcunha@usp.br</a></p>
+  </div>
+</footer>
+
+<div id="lb" role="dialog" aria-label="Programação ampliada">
+  <span class="close" aria-hidden="true">×</span>
+  <img id="lbimg" alt="Grade horária ampliada">
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- barra de progresso ---------- */
+  var bar = document.getElementById('progress');
+  function prog(){
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + '%';
+  }
+  window.addEventListener('scroll', prog, {passive:true}); prog();
+
+  /* ---------- reveal ---------- */
+  var els = document.querySelectorAll('.rv');
+  if ('IntersectionObserver' in window && !reduce){
+    var io = new IntersectionObserver(function(en){
+      en.forEach(function(e,i){
+        if(e.isIntersecting){
+          var d = e.target.closest('.cards, .people, .facts, .logos') ? (i%6)*70 : 0;
+          setTimeout(function(){ e.target.classList.add('in'); }, d);
+          io.unobserve(e.target);
+        }
+      });
+    }, {rootMargin:'0px 0px -8% 0px', threshold:.08});
+    els.forEach(function(e){ io.observe(e); });
+  } else {
+    els.forEach(function(e){ e.classList.add('in'); });
+  }
+
+  /* ---------- contagem regressiva ---------- */
+  var START = new Date('2026-09-08T14:00:00-03:00').getTime();
+  var END   = new Date('2026-09-11T12:00:00-03:00').getTime();
+  var box = document.getElementById('count');
+  function unit(n,l){ return '<div class="u"><span class="n">'+String(n).padStart(2,'0')+'</span><span class="l">'+l+'</span></div>'; }
+  function tick(){
+    var now = Date.now(), d = START - now;
+    if (d <= 0){
+      box.className = 'count done in';
+      box.textContent = now < END ? 'Acontecendo agora em São Carlos' : 'Evento realizado — obrigado a todos';
+      clearInterval(iv); return;
+    }
+    var s = Math.floor(d/1000);
+    box.innerHTML = unit(Math.floor(s/86400),'dias') + unit(Math.floor(s/3600)%24,'horas')
+                  + unit(Math.floor(s/60)%60,'min') + unit(s%60,'seg');
+  }
+  var iv = setInterval(tick, 1000); tick();
+
+  /* ---------- lightbox da programação ---------- */
+  var lb = document.getElementById('lb'), shot = document.getElementById('grade');
+  function open(){
+    var im = document.getElementById('lbimg');
+    if (!im.getAttribute('src')) im.setAttribute('src', shot.currentSrc || shot.src);
+    lb.classList.add('on'); document.body.style.overflow='hidden';
+  }
+  function close(){ lb.classList.remove('on'); document.body.style.overflow=''; }
+  shot.addEventListener('click', open);
+  lb.addEventListener('click', close);
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+
+  /* ---------- rede viária animada ---------- */
+  var cv = document.getElementById('net'), ctx = cv.getContext('2d');
+  var W, H, dpr, nodes = [], edges = [], cars = [];
+
+  function build(){
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    W = cv.clientWidth; H = cv.clientHeight;
+    cv.width = W*dpr; cv.height = H*dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
+
+    var step = W < 700 ? 130 : 165;
+    var cols = Math.ceil(W/step)+2, rows = Math.ceil(H/step)+2;
+    nodes = []; edges = []; cars = [];
+
+    for (var r=0; r<rows; r++){
+      for (var c=0; c<cols; c++){
+        nodes.push({
+          x:(c-0.5)*step + (Math.random()-.5)*step*.55,
+          y:(r-0.5)*step + (Math.random()-.5)*step*.55,
+          hub: Math.random() < .12,
+          ph: Math.random()*Math.PI*2
+        });
+      }
+    }
+    for (var i=0; i<nodes.length; i++){
+      for (var j=i+1; j<nodes.length; j++){
+        var dx = nodes[i].x-nodes[j].x, dy = nodes[i].y-nodes[j].y;
+        var dist = Math.sqrt(dx*dx+dy*dy);
+        if (dist < step*1.18) edges.push({a:i,b:j,d:dist});
+      }
+    }
+    var n = Math.min(Math.round(edges.length*0.30), 46);
+    for (var k=0; k<n; k++) cars.push(spawn());
+  }
+  function spawn(){
+    var e = edges[(Math.random()*edges.length)|0];
+    return { e:e, t:Math.random(), v:(0.10+Math.random()*0.22)/Math.max(e.d,1), dir: Math.random()<.5?1:-1 };
+  }
+
+  var t0 = 0;
+  function frame(ts){
+    var dt = Math.min(ts - t0, 60); t0 = ts;
+    ctx.clearRect(0,0,W,H);
+
+    /* arestas */
+    ctx.lineWidth = 1;
+    for (var i=0; i<edges.length; i++){
+      var e = edges[i], a = nodes[e.a], b = nodes[e.b];
+      ctx.strokeStyle = 'rgba(120,168,214,' + (0.16 - e.d/2600) + ')';
+      ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke();
+    }
+    /* nós */
+    for (var m=0; m<nodes.length; m++){
+      var nd = nodes[m];
+      var pulse = 0.5 + 0.5*Math.sin(ts/1400 + nd.ph);
+      ctx.beginPath();
+      ctx.arc(nd.x, nd.y, nd.hub ? 3.2 : 1.7, 0, 6.2832);
+      ctx.fillStyle = nd.hub ? 'rgba(224,166,60,' + (0.35 + 0.4*pulse) + ')'
+                             : 'rgba(143,184,221,' + (0.22 + 0.28*pulse) + ')';
+      ctx.fill();
+    }
+    /* veículos */
+    for (var c=0; c<cars.length; c++){
+      var car = cars[c];
+      car.t += car.v * car.dir * dt * 0.06;
+      if (car.t > 1 || car.t < 0){ cars[c] = spawn(); continue; }
+      var na = nodes[car.e.a], nb = nodes[car.e.b];
+      var x = na.x + (nb.x-na.x)*car.t, y = na.y + (nb.y-na.y)*car.t;
+      var tail = 0.055, tx = na.x + (nb.x-na.x)*(car.t - tail*car.dir),
+                        ty = na.y + (nb.y-na.y)*(car.t - tail*car.dir);
+      var g = ctx.createLinearGradient(tx,ty,x,y);
+      g.addColorStop(0,'rgba(120,180,235,0)');
+      g.addColorStop(1,'rgba(168,212,255,.85)');
+      ctx.strokeStyle = g; ctx.lineWidth = 1.8; ctx.lineCap='round';
+      ctx.beginPath(); ctx.moveTo(tx,ty); ctx.lineTo(x,y); ctx.stroke();
+    }
+    raf = requestAnimationFrame(frame);
+  }
+
+  var raf;
+  function start(){
+    build();
+    if (reduce){ ctx.clearRect(0,0,W,H); frameStatic(); return; }
+    cancelAnimationFrame(raf); t0 = performance.now(); raf = requestAnimationFrame(frame);
+  }
+  function frameStatic(){
+    for (var i=0; i<edges.length; i++){
+      var e = edges[i], a = nodes[e.a], b = nodes[e.b];
+      ctx.strokeStyle='rgba(120,168,214,.14)'; ctx.lineWidth=1;
+      ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke();
+    }
+    nodes.forEach(function(n){
+      ctx.beginPath(); ctx.arc(n.x,n.y,n.hub?3:1.6,0,6.2832);
+      ctx.fillStyle = n.hub ? 'rgba(224,166,60,.6)' : 'rgba(143,184,221,.35)'; ctx.fill();
+    });
+  }
+  var rt; window.addEventListener('resize', function(){ clearTimeout(rt); rt = setTimeout(start, 220); });
+  document.addEventListener('visibilitychange', function(){
+    if (document.hidden) cancelAnimationFrame(raf);
+    else if (!reduce){ t0 = performance.now(); raf = requestAnimationFrame(frame); }
+  });
+  start();
+})();
+</script>
+</body>
+</html>
