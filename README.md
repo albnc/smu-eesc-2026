@@ -19,13 +19,12 @@ Participação gratuita · vagas limitadas para o curso de 9/set
 
 O simpósio encerra o projeto **"Repensando a modelagem de tráfego em redes de transportes para a nova geração de cidades inteligentes e conectadas"** (Processo CNPq nº 409087/2023-8 — Chamada CNPq/MCTI nº 10/2023, Faixa B, Grupos Consolidados).
 
-São quatro dias em que a equipe do projeto — pesquisadores de sete instituições — apresenta os resultados obtidos entre 2023 e 2026 e discute a agenda que se abre a partir deles. O programa combina **palestras técnicas**, um **curso prático de dia inteiro em R** e **sessões de trabalho** do grupo de pesquisa.
+São quatro dias em que a equipe do projeto — pesquisadores de cinco instituições — apresenta os resultados obtidos entre 2023 e 2026 e discute a agenda que se abre a partir deles. O programa combina **palestras** e um **curso prático em R** do grupo de pesquisa.
 
 | | |
 |---|---|
 | **Curso prático em R** | *Dados censitários e acessibilidade urbana em R* — dia inteiro em 9/set, quatro módulos alternando teoria e prática. Vagas limitadas. |
-| **Palestras técnicas** | Emissões de GEE, microssimulação com realidade virtual, veículos autônomos e validade estatística de resultados de simulação. |
-| **Resultados do projeto** | Três anos de pesquisa em modelagem de tráfego em escala de rede, apresentados pelos próprios autores. |
+| **Palestras** | Emissões de GEE, microssimulação com realidade virtual, veículos autônomos e validade estatística de resultados de simulação. |
 
 ### Para quem é
 
@@ -47,7 +46,6 @@ Estudantes de graduação e pós-graduação, pesquisadores, docentes e profissi
 
 ![Grade horária do Simpósio de Mobilidade Urbana, de 8 a 11 de setembro de 2026.](images/programacao.png)
 
-Grade preliminar, sujeita a ajustes até a véspera do evento. Os intervalos de *coffee break* são também os momentos de conversa entre as equipes — estão na grade de propósito.
 
 | Horário | 8/set · terça | 9/set · quarta | 10/set · quinta | 11/set · sexta |
 |:--|:--|:--|:--|:--|
@@ -61,19 +59,15 @@ Grade preliminar, sujeita a ajustes até a véspera do evento. Os intervalos de 
 
 > **Legenda.** 🔒 atividades internas do grupo de pesquisa · ★ abertura oficial · — sem atividade programada.
 
-### Os quatro dias em uma frase cada
-
-- **8/set (terça)** — chegada e recepção dos convidados pela manhã, abertura à tarde e, no fim do dia, o tutorial de replicações e validade estatística com Rodrigo Castelan (UFSC).
-- **9/set (quarta)** — dia inteiro dedicado ao curso *Dados censitários e acessibilidade urbana em R*, em quatro módulos que alternam teoria e prática.
-- **10/set (quinta)** — dia das apresentações de resultados: emissões de GEE, microssimulação com realidade virtual, veículos autônomos e o fechamento com os resultados da EESC-USP.
-- **11/set (sexta)** — sessões internas: reunião de fechamento do grupo e planejamento dos artigos decorrentes do projeto.
 
 ---
 
 ## Palestrantes
 
-O simpósio reúne pesquisadores de sete instituições — EESC-USP, EPUSP, UFMG, UFRJ, UFSC, UFSM e UFBA — que integraram a equipe do projeto entre 2023 e 2026.
+O simpósio reúne pesquisadores de cinco instituições — USP (EESC e EP), UFMG, UFRJ, UFSC e UFSM — que integraram a equipe do projeto entre 2023 e 2026. Além da participação especial do **prof. Jorge Ubirajara** (UFBA) que ministrará o curso em R -- desenvolvedor de pacote em R, como o [`cnefetools`](https://pedreirajr.github.io/cnefetools/), e autor do livro [Censo Demográfico em R](https://pedreirajr.github.io/rcensolivro/).
 
+
+<!--
 ### Palestras e sessões técnicas
 
 **Prof. Dr. Rodrigo Castelan Carlson** — *UFSC*
@@ -96,6 +90,8 @@ Membro da equipe do projeto. Discute como a introdução de veículos autônomos
 Coordenador do projeto. Consolida os resultados obtidos entre 2023 e 2026 pelo Departamento de Engenharia de Transportes da EESC-USP e abre a discussão sobre a agenda de pesquisa que se segue ao encerramento.
 **Tema:** Resultados das pesquisas EESC-USP e fechamento do projeto. · `10/set · 16h00–18h00`
 
+--> 
+
 ### Curso — Dados censitários e acessibilidade urbana em R
 
 Curso de dia inteiro (9/set), em quatro módulos alternando teoria e prática em R. Vagas limitadas.
@@ -109,69 +105,17 @@ Responsável, junto com a equipe, pela parte prática do curso: manipulação de
 **Dr. Lucas Brandão Monteiro de Assis** — *EESC-USP*
 Atua nos módulos práticos, com foco na reprodutibilidade das rotinas e na aplicação dos indicadores a estudos de caso.
 
-### Equipe do projeto
-
-Pesquisadores da equipe que participam das sessões de discussão e da reunião de fechamento.
-
-- **Prof. Dr. Claudio Luiz Marte** — *EPUSP* · interface entre sistemas inteligentes de transportes e infraestrutura viária.
-- **Prof. Dr. José Reynaldo Anselmo Setti** — *EESC-USP* · atuação de longa data em modelagem e simulação de tráfego.
-- **Profa. Dra. Marina Leite de Barros Baltar** — *UFRJ* · análise de redes e mobilidade urbana.
 
 ---
 
 ## Inscrição
 
-A participação é **gratuita**. O curso do dia 9 de setembro tem **vagas limitadas** e a seleção segue a ordem de inscrição.
+A participação é **gratuita**. O curso em R tem **vagas limitadas** e a seleção segue a ordem de inscrição.
 
 ### ➜ **[https://forms.gle/tNbCwFhj6etKFCQH7](https://forms.gle/tNbCwFhj6etKFCQH7)**
 
 ![Banner de divulgação com QR Code das inscrições.](images/banner-form.png)
 
----
-
-## Materiais
-
-### Programação e divulgação
-
-| Arquivo | Formato | Uso |
-|:--|:--|:--|
-| [Programação completa](materiais/programacao-simposio-mobilidade.pdf) | PDF | Grade em texto, para impressão e anexo em pedidos de afastamento |
-| [Programação diagramada](materiais/programacao-arte.pdf) | PDF | Versão em arte, para divulgação |
-| [Grade em imagem](images/programacao.png) | PNG | Para compartilhar em mensagens e redes sociais |
-| [Banner do simpósio](materiais/banner-divulgacao.png) | PNG | Peça horizontal com QR Code — e-mail, apresentações e murais |
-
-### Material das sessões
-
-Slides, códigos e dados são publicados aqui **após cada sessão**. Os módulos do curso em R vêm com os scripts e as bases usadas em aula.
-
-| Sessão | Responsáveis | Status |
-|:--|:--|:--|
-| Curso: Dados censitários e acessibilidade urbana em R (9/set) | Jorge Ubirajara (UFBA), Thiago Louro e Lucas Brandão (EESC-USP) | *Em breve* |
-| Tutorial de replicações e validade estatística (8/set) | Rodrigo Castelan (UFSC) | *Em breve* |
-| Emissões de GEE: laboratório, mundo real e simulação (10/set) | Flávio Vaz (EESC-USP) | *Em breve* |
-| Microssimulação de tráfego e realidade virtual (10/set) | Felipe Caleffi (UFSM) | *Em breve* |
-| Veículos autônomos no meio urbano (10/set) | José Elievam (UFMG) | *Em breve* |
-| Resultados EESC-USP e fechamento do projeto (10/set) | André Luiz Cunha (EESC-USP) | *Em breve* |
-
-> Para publicar um material, coloque o arquivo em `materiais/` e troque *Em breve* por um link — ou aponte para o repositório/DOI onde o material já esteja depositado.
-
----
-
-## Sobre o projeto
-
-**"Repensando a modelagem de tráfego em redes de transportes para a nova geração de cidades inteligentes e conectadas"**
-Processo CNPq nº 409087/2023-8 — Chamada CNPq/MCTI nº 10/2023, Faixa B (Grupos Consolidados).
-Coordenação: Prof. Dr. André Luiz Barbosa Nunes da Cunha — Departamento de Engenharia de Transportes, EESC-USP.
-
-### Pendências antes da divulgação ampla
-
-- **Sínteses dos palestrantes** foram redigidas a partir das cartas-convite e da programação. Confirmar títulos, vínculos e recorte de pesquisa com cada convidado.
-- **Vínculo de Flávio Vaz**: a carta-convite traz EESC-USP; o flier da arte final traz EPUSP. Este documento segue a carta. Definir qual está correto e alinhar as duas peças.
-- **Instituições de Thiago Louro e Lucas Assis** não constavam da proposta; aqui registradas como EESC-USP, seguindo o flier. Confirmar.
-- **Local exato** (auditório/sala) e informações de hospedagem e deslocamento em São Carlos ainda não constam.
-- **Marca do CNPq**: item 3.2 do Termo de Outorga pede consulta prévia à comunicação social do CNPq (comunicacao@cnpq.br) sobre os padrões de aplicação.
-
----
 
 <div align="center">
 
@@ -179,7 +123,5 @@ Coordenação: Prof. Dr. André Luiz Barbosa Nunes da Cunha — Departamento de 
 
 **Realização:** Departamento de Engenharia de Transportes — EESC-USP
 **Apoio:** CNPq — Chamada CNPq/MCTI nº 10/2023 · Processo 409087/2023-8
-
-Dúvidas e contato: [alcunha@usp.br](mailto:alcunha@usp.br)
 
 </div>
