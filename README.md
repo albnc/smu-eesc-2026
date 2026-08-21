@@ -47,19 +47,6 @@ Estudantes de graduação e pós-graduação, pesquisadores, docentes e profissi
 ![Grade horária do Simpósio de Mobilidade Urbana, de 8 a 11 de setembro de 2026.](images/programacao.png)
 
 
-| Horário | 8/set · terça | 9/set · quarta | 10/set · quinta | 11/set · sexta |
-|:--|:--|:--|:--|:--|
-| **8h00–9h30** | — | **Dados censitários · teoria**<br>Jorge Ubirajara (UFBA), Thiago Louro e Lucas Brandão (EESC) | **Emissões de GEE em simulação**<br>Flávio Vaz (EESC-USP) | 🔒 **Reunião de fechamento**<br>Grupo de pesquisa |
-| *Coffee break* | | | | |
-| **10h00–12h00** | **Chegada dos convidados**<br>Recepção no aeroporto | **Dados censitários · prática em R**<br>Jorge Ubirajara (UFBA), Thiago Louro e Lucas Brandão (EESC) | **Microssimulação e realidade virtual**<br>Felipe Caleffi (UFSM) | 🔒 **Perspectivas futuras**<br>Planejamento de artigos |
-| *Almoço* | | | | |
-| **14h00–15h30** | ★ **Abertura do evento**<br>Recepção dos convidados | **Acessibilidade urbana · teoria**<br>Jorge Ubirajara (UFBA), Thiago Louro e Lucas Brandão (EESC) | **Veículos autônomos no meio urbano**<br>José Elievam (UFMG) | — |
-| *Coffee break* | | | | |
-| **16h00–18h00** | **Tutorial de replicações e validade estatística**<br>Rodrigo Castelan (UFSC) | **Acessibilidade urbana · prática em R**<br>Jorge Ubirajara (UFBA), Thiago Louro e Lucas Brandão (EESC) | **Resultados e fechamento do projeto**<br>André Luiz Cunha (EESC-USP) | — |
-
-> **Legenda.** 🔒 atividades internas do grupo de pesquisa · ★ abertura oficial · — sem atividade programada.
-
-
 ---
 
 ## Palestrantes
