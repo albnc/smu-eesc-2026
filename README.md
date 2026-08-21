@@ -100,7 +100,7 @@ Atua nos módulos práticos, com foco na reprodutibilidade das rotinas e na apli
 A participação é **gratuita**. O curso em R tem **vagas limitadas** e a seleção segue a ordem de inscrição.
 
 
-### ➜ **[Últimas vagas!!](https://forms.gle/tNbCwFhj6etKFCQH7))**
+### ➜ **[Últimas vagas!!](https://forms.gle/tNbCwFhj6etKFCQH7)**
 
 
 <div align="center">
