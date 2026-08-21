@@ -51,7 +51,7 @@ Estudantes de graduação e pós-graduação, pesquisadores, docentes e profissi
 
 ## Palestrantes
 
-O simpósio reúne pesquisadores de cinco instituições — USP (EESC e EP), UFMG, UFRJ, UFSC e UFSM — que integraram a equipe do projeto entre 2023 e 2026. Além da participação especial do **prof. Jorge Ubirajara** (UFBA) que ministrará o curso em R -- desenvolvedor de pacotes em R, como o [`cnefetools`](https://pedreirajr.github.io/cnefetools/), e autor do livro [Censo Demográfico em R](https://pedreirajr.github.io/rcensolivro/).
+O simpósio reúne pesquisadores de cinco instituições — USP (EESC e EP), UFMG, UFRJ, UFSC e UFSM — que integraram a equipe do projeto entre 2023 e 2026. Além da participação especial do **prof. Jorge Ubirajara** (UFBA) que ministrará o curso em R - desenvolvedor de pacotes em R, como o [`cnefetools`](https://pedreirajr.github.io/cnefetools/), e autor do livro [Censo Demográfico em R](https://pedreirajr.github.io/rcensolivro/).
 
 
 <!--
@@ -86,10 +86,10 @@ Curso de dia inteiro (9/set), em quatro módulos alternando teoria e prática em
 **Prof. Dr. Jorge Ubirajara Pedreira Junior** — *UFBA*
 Conduz os módulos que ligam a base censitária brasileira às medidas de acessibilidade urbana, do tratamento dos setores censitários ao cálculo de indicadores em R.
 
-**Dr. Thiago Vinicius Louro** — *EESC-USP*
+**Dr. Thiago Vinicius Louro** — *egresso EESC-USP*
 Responsável, junto com a equipe, pela parte prática do curso: manipulação de dados, cálculo de indicadores e visualização dos resultados em R.
 
-**Dr. Lucas Brandão Monteiro de Assis** — *EESC-USP*
+**Dr. Lucas Brandão Monteiro de Assis** — *egresso EESC-USP*
 Atua nos módulos práticos, com foco na reprodutibilidade das rotinas e na aplicação dos indicadores a estudos de caso.
 
 
@@ -99,9 +99,8 @@ Atua nos módulos práticos, com foco na reprodutibilidade das rotinas e na apli
 
 A participação é **gratuita**. O curso em R tem **vagas limitadas** e a seleção segue a ordem de inscrição.
 
-### ➜ **[https://forms.gle/tNbCwFhj6etKFCQH7](https://forms.gle/tNbCwFhj6etKFCQH7)**
+### ➜ **[hÚltimas vafgs(https://forms.gle/tNbCwFhj6etKFCQH7)**
 
-![Banner de divulgação com QR Code das inscrições.](images/banner-form.png)
 
 
 <div align="center">
