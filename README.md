@@ -86,7 +86,7 @@ Curso de dia inteiro (9/set), em quatro módulos alternando teoria e prática em
 Conduz os módulos que ligam a base censitária brasileira às medidas de acessibilidade urbana, do tratamento dos setores censitários ao cálculo de indicadores em R.
 
 **Dr. Thiago Vinicius Louro** — *egresso EESC-USP*    
-Responsável, junto com a equipe, pela parte prática do curso: manipulação de dados, cálculo de indicadores e visualização dos resultados em R.
+Responsável pela parte prática do curso: manipulação de dados, cálculo de indicadores e visualização dos resultados em R.
 
 **Dr. Lucas Brandão Monteiro de Assis** — *egresso EESC-USP*    
 Atua nos módulos práticos, com foco na reprodutibilidade das rotinas e na aplicação dos indicadores a estudos de caso.
