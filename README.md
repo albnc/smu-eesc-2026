@@ -51,7 +51,7 @@ Estudantes de graduação e pós-graduação, pesquisadores, docentes e profissi
 
 ## Palestrantes
 
-O simpósio reúne pesquisadores de cinco instituições — USP (EESC e EP), UFMG, UFRJ, UFSC e UFSM — que integraram a equipe do projeto entre 2023 e 2026. Além da participação especial do **prof. Jorge Ubirajara** (UFBA) que ministrará o curso em R -- desenvolvedor de pacote em R, como o [`cnefetools`](https://pedreirajr.github.io/cnefetools/), e autor do livro [Censo Demográfico em R](https://pedreirajr.github.io/rcensolivro/).
+O simpósio reúne pesquisadores de cinco instituições — USP (EESC e EP), UFMG, UFRJ, UFSC e UFSM — que integraram a equipe do projeto entre 2023 e 2026. Além da participação especial do **prof. Jorge Ubirajara** (UFBA) que ministrará o curso em R -- desenvolvedor de pacotes em R, como o [`cnefetools`](https://pedreirajr.github.io/cnefetools/), e autor do livro [Censo Demográfico em R](https://pedreirajr.github.io/rcensolivro/).
 
 
 <!--
