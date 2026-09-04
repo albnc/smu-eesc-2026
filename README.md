@@ -43,7 +43,7 @@ Estudantes de graduação e pós-graduação, pesquisadores, docentes e profissi
 
 ## Programação
 
-![Grade horária do Simpósio de Mobilidade Urbana, de 8 a 11 de setembro de 2026.](images/programacao.png)
+![Grade horária do Simpósio de Mobilidade Urbana, de 8 a 11 de setembro de 2026.](images/programacao.pdf)
 
 
 ---
